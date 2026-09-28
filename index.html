@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevTeam - Collaboration Project</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fb;
+            color: #222;
+        }
+
+        /* Navbar */
+        nav {
+            background: #111827;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #2563eb, #7c3aed);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 28px;
+            background: white;
+            color: #2563eb;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* About */
+        .section {
+            padding: 70px 8%;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        .section > p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        /* Cards */
+        .cards {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #2563eb;
+        }
+
+        .card p {
+            line-height: 1.6;
+            color: #666;
+        }
+
+        /* Team */
+        .team {
+            background: #eef2ff;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">DevTeam</div>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div>
+            <h1>Build. Collaborate. Create.</h1>
+
+            <p>
+                A collaborative project created by three developers
+                using Git and GitHub.
+            </p>
+
+            <a href="#about" class="btn">Explore Project</a>
+        </div>
+
+    </section>
+
+
+    <!-- About Section -->
+    <section class="section" id="about">
+
+        <h2>About Our Project</h2>
+
+        <p>
+            This is a practice project designed to help us understand
+            GitHub collaboration, branches, commits, pull requests,
+            merging, and teamwork.
+        </p>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Git</h3>
+                <p>
+                    Track changes in our project and manage different
+                    versions of our code.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>GitHub</h3>
+                <p>
+                    Store our project online and collaborate with
+                    other team members.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Teamwork</h3>
+                <p>
+                    Work on different features using branches and
+                    combine our work through pull requests.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Team Section -->
+    <section class="section team" id="team">
+
+        <h2>Our Team</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Member 1</h3>
+                <p>Frontend Developer</p>
+            </div>
+
+            <div class="card">
+                <h3>Member 2</h3>
+                <p>UI/UX Developer</p>
+            </div>
+
+            <div class="card">
+                <h3>Member 3</h3>
+                <p>Backend Developer</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            This section can later be developed by one of the
+            team members as part of our GitHub collaboration practice.
+        </p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 DevTeam | GitHub Collaboration Project</p>
+    </footer>
+
+</body>
+</html>
